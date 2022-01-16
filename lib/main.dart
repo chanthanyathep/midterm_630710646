@@ -74,25 +74,49 @@ class _MyHomePageState extends State<MyHomePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SizedBox(
-                        width: 180.0,
-                        height: 180.0,
-                        child: Text(
-                          'LENGTH\n   (cm)',
-                          style: TextStyle(
-                            fontSize: 20,
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SizedBox(
+                            width: 100.0,
+                            child: Text(
+                              'LENGTH\n   (cm)',
+                              style: TextStyle(
+                                fontSize: 20,
+                              ),
+                            ),
                           ),
-                        ),
+                          /*TextField(
+                            textAlign: TextAlign.center,
+                            controller: _controller,
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Colors.white.withOpacity(0.7),
+                              border: OutlineInputBorder(),
+                              hintText: 'ทายเลขตั้งแต่ 1 ถึง 100',
+                            ),
+                          )*/
+                          Text(
+                            '\nไม่สามารถสร้างTextField\nได้จึงสามารถทำได้เท่านี้'
+                          ),
+                        ],
                       ),
-                      Padding(padding: const EdgeInsets.all(10)),
-                      SizedBox(
-                        width: 180.0,
-                        height: 180.0,
-                        child: const DecoratedBox(
-                          decoration: const BoxDecoration(
-                            color: Colors.white,
+                      Padding(padding: const EdgeInsets.all(30)),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children:[ SizedBox(
+                          width: 100.0,
+                          child: Text(
+                            'LENGTH\n   (cm)',
+                            style: TextStyle(
+                              fontSize: 20,
+                            ),
                           ),
                         ),
+                          Text(
+                              '\nพยายามส่วนTextFieldมาาเกือบ\nสองชั่วโมงแล้วมันไม่แสดงผล'
+                          ),
+                       ],
                       ),
                     ],
                   ),
